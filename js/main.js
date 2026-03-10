@@ -231,6 +231,33 @@ if (form) {
   telefoneInput.addEventListener('blur', validateContactFields);
   marcaInput.addEventListener('blur', validateContactFields);
 
+  /* ─── CONTACTO PREFERENCIAL AUTOMÁTICO ──────────────────────────── */
+  const contactoPrefSelect = form.querySelector('#contacto-pref');
+
+  function updateContactoPreferencial() {
+    const emailHasValue = emailInput.value.trim() !== '';
+    const telefoneHasValue = telefoneInput.value.trim() !== '';
+
+    // Se só telefone está preenchido
+    if (telefoneHasValue && !emailHasValue) {
+      contactoPrefSelect.value = 'telefone';
+    }
+    // Se só email está preenchido
+    else if (emailHasValue && !telefoneHasValue) {
+      contactoPrefSelect.value = 'email';
+    }
+    // Se ambos estão preenchidos, deixar vazio (utilizador escolhe)
+    // Se nenhum está preenchido, deixar vazio
+    else {
+      contactoPrefSelect.value = '';
+    }
+  }
+
+  emailInput.addEventListener('input', updateContactoPreferencial);
+  emailInput.addEventListener('blur', updateContactoPreferencial);
+  telefoneInput.addEventListener('input', updateContactoPreferencial);
+  telefoneInput.addEventListener('blur', updateContactoPreferencial);
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
