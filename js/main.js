@@ -196,47 +196,40 @@ const form        = document.getElementById('requestForm');
 const formSuccess = document.getElementById('formSuccess');
 
 if (form) {
+  // Cache field references to avoid repeated DOM queries
+  const emailInput = form.querySelector('#email');
+  const telefoneInput = form.querySelector('#telefone');
+  const marcaInput = form.querySelector('#marca');
+
   /* ─── VALIDAÇÃO CUSTOMIZADA: email OU telefone (pelo menos 1 obrigatório) */
   function validateContactFields() {
-    const email = form.querySelector('#email');
-    const telefone = form.querySelector('#telefone');
-    const marca = form.querySelector('#marca');
-
-    const emailHasValue = email.value.trim() !== '';
-    const telefoneHasValue = telefone.value.trim() !== '';
+    const emailHasValue = emailInput.value.trim() !== '';
+    const telefoneHasValue = telefoneInput.value.trim() !== '';
 
     // Validar que PELO MENOS UM está preenchido
     if (!emailHasValue && !telefoneHasValue) {
-      email.setCustomValidity('Por favor, preencha o email ou o telefone.');
-      telefone.setCustomValidity('Por favor, preencha o email ou o telefone.');
+      emailInput.setCustomValidity('Por favor, preencha o email ou o telefone.');
+      telefoneInput.setCustomValidity('Por favor, preencha o email ou o telefone.');
       return false;
     }
 
-    email.setCustomValidity('');
-    telefone.setCustomValidity('');
+    emailInput.setCustomValidity('');
+    telefoneInput.setCustomValidity('');
 
     // Validar marca obrigatório
-    if (!marca.value.trim()) {
-      marca.setCustomValidity('Por favor, preencha a marca.');
+    if (!marcaInput.value.trim()) {
+      marcaInput.setCustomValidity('Por favor, preencha a marca.');
       return false;
     }
 
-    marca.setCustomValidity('');
+    marcaInput.setCustomValidity('');
     return true;
   }
 
   // Validar ao perder foco
-  form.querySelector('#email').addEventListener('blur', () => {
-    validateContactFields();
-  });
-
-  form.querySelector('#telefone').addEventListener('blur', () => {
-    validateContactFields();
-  });
-
-  form.querySelector('#marca').addEventListener('blur', () => {
-    validateContactFields();
-  });
+  emailInput.addEventListener('blur', validateContactFields);
+  telefoneInput.addEventListener('blur', validateContactFields);
+  marcaInput.addEventListener('blur', validateContactFields);
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
