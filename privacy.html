@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — FastHarmony</title>
+  <meta name="description" content="Política de Privacidade e proteção de dados pessoais - FastHarmony" />
+  <meta name="theme-color" content="#050504" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════ */
+    /* PRIVACY PAGE — Inline styling */
+    /* ═══════════════════════════════════════════ */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Barlow', system-ui, sans-serif;
+      background-color: #050504;
+      color: #ece7de;
+      line-height: 1.75;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 8000;
+      opacity: 0.045;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 280px 280px;
+      mix-blend-mode: overlay;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 72px;
+      background: rgba(5, 5, 4, 0.9);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3rem;
+    }
+
+    .nav__logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ece7de;
+    }
+
+    .nav__logo-harmony {
+      color: #b8965a;
+    }
+
+    .nav__logo-back {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #90897f;
+      text-decoration: none;
+      transition: color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav__logo-back:hover {
+      color: #b8965a;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1320px;
+      margin-inline: auto;
+      padding-inline: 3rem;
+    }
+
+    main {
+      padding-top: calc(72px + 4rem);
+      padding-bottom: 7rem;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #fff;
+      margin-block: 0 2rem;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #b8965a;
+      margin-block: 3rem 1.5rem;
+      border-block-start: 1px solid rgba(255, 235, 190, 0.22);
+      padding-block-start: 2rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #ece7de;
+      margin-block: 1.75rem 0.75rem;
+      letter-spacing: 0.06em;
+    }
+
+    p {
+      margin-block-end: 1.25rem;
+      color: #90897f;
+    }
+
+    strong {
+      color: #ece7de;
+      font-weight: 600;
+    }
+
+    ul, ol {
+      margin-block-end: 1.5rem;
+      margin-inline-start: 2rem;
+      color: #90897f;
+    }
+
+    li {
+      margin-block-end: 0.5rem;
+    }
+
+    a {
+      color: #b8965a;
+      text-decoration: underline;
+      transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .section {
+      margin-block-end: 4rem;
+    }
+
+    .highlight {
+      background: rgba(184, 150, 90, 0.08);
+      padding: 1.5rem;
+      border-left: 2px solid #b8965a;
+      border-radius: 2px;
+      margin-block: 1.5rem;
+    }
+
+    footer {
+      background: #030302;
+      border-top: 1px solid rgba(255, 255, 255, 0.055);
+      padding: 4rem 3rem 2rem;
+      text-align: center;
+      color: #4a4640;
+      font-size: 0.78rem;
+    }
+
+    @media (width < 640px) {
+      .nav {
+        padding: 0 1.25rem;
+      }
+
+      .container {
+        padding-inline: 1.25rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav__logo" aria-label="FastHarmony — Topo">
+      <span>FAST</span><span class="nav__logo-harmony">HARMONY</span>
+    </a>
+    <a href="index.html" class="nav__logo-back">← Voltar</a>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <h1>Política de Privacidade</h1>
+      <p><strong>Última actualização:</strong> Março 2026</p>
+
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section">
+        <h2>1. Responsável pelo Tratamento de Dados</h2>
+        <p>
+          <strong>FastHarmony LDA</strong><br>
+          Portugal<br>
+          Email: <a href="mailto:info@fastharmony.pt">info@fastharmony.pt</a><br>
+          Telefone: <a href="tel:+351963576699">+351 963 576 699</a>
+        </p>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section">
+        <h2>2. Informação sobre o Tratamento de Dados Pessoais (RGPD)</h2>
+
+        <h3>Base Legal</h3>
+        <p>
+          O tratamento dos seus dados pessoais é realizado com base no <strong>consentimento</strong> que presta ao preencher e submeter o formulário de pedido de informação.
+        </p>
+
+        <h3>Dados Recolhidos</h3>
+        <p>No formulário de "Pedido de Informação" recolhemos:</p>
+        <ul>
+          <li><strong>Dados de Identificação:</strong> Nome completo, email, telefone</li>
+          <li><strong>Preferências de Contacto:</strong> Método preferencial (email, telefone, WhatsApp)</li>
+          <li><strong>Informações sobre Veículos:</strong> Tipo, marca, modelo, combustível, orçamento, equipamentos desejados</li>
+          <li><strong>Dados Adicionais:</strong> Mensagens, observações, como nos conheceu</li>
+        </ul>
+
+        <h3>Finalidade do Tratamento</h3>
+        <ul>
+          <li>Responder ao seu pedido de informação</li>
+          <li>Disponibilizar veículos em conformidade com as suas preferências</li>
+          <li>Comunicação via email, telefone ou outro canal por si indicado</li>
+          <li>Melhorar os nossos serviços e experiência do utilizador</li>
+          <li>Cumprir obrigações legais e regulamentares</li>
+        </ul>
+
+        <h3>Período de Retenção</h3>
+        <p>
+          Os seus dados pessoais serão conservados pelo período necessário para cumprir as finalidades indicadas. Em geral:
+        </p>
+        <ul>
+          <li><strong>Pedidos activos:</strong> Durante o tempo de processamento do pedido</li>
+          <li><strong>Após conclusão:</strong> Até 3 anos para fins de arquivo e conformidade legal</li>
+          <li>Pode solicitar a eliminação a qualquer momento</li>
+        </ul>
+
+        <h3>Partilha de Dados</h3>
+        <p>
+          Os seus dados <strong>não serão partilhados com terceiros</strong>, exceto quando:
+        </p>
+        <ul>
+          <li>Obrigado por lei ou autoridade competente</li>
+          <li>Para cumprir obrigações fiscais ou regulamentares</li>
+          <li>Com prestadores de serviços (email, hospedagem) sob contrato de confidencialidade</li>
+        </ul>
+
+        <h3>Segurança dos Dados</h3>
+        <p>
+          Implementamos medidas técnicas e organizacionais para proteger os seus dados contra acesso não autorizado, alteração, divulgação ou destruição. Todos os dados são transmitidos e armazenados com encriptação.
+        </p>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section">
+        <h2>3. Os Seus Direitos ao Abrigo do RGPD</h2>
+        <p>Tem o direito a:</p>
+
+        <h3>Direito de Acesso</h3>
+        <p>Solicitar acesso aos dados pessoais que temos sobre si e como estão a ser tratados.</p>
+
+        <h3>Direito de Rectificação</h3>
+        <p>Corrigir ou actualizar dados pessoais imprecisos ou incompletos.</p>
+
+        <h3>Direito ao Apagamento ("Direito ao Esquecimento")</h3>
+        <p>Solicitar a eliminação dos seus dados pessoais, exceto quando há obrigações legais de conservação.</p>
+
+        <h3>Direito à Limitação do Tratamento</h3>
+        <p>Restringir o processamento dos seus dados em determinadas circunstâncias.</p>
+
+        <h3>Direito à Portabilidade dos Dados</h3>
+        <p>Receber os seus dados pessoais num formato estruturado e portável, ou solicitar a sua transferência para outro responsável.</p>
+
+        <h3>Direito de Oposição</h3>
+        <p>Opor-se ao tratamento dos seus dados para marketing direto ou fins semelhantes.</p>
+
+        <h3>Direito a não ser Sujeito a Decisões Automatizadas</h3>
+        <p>Não estará sujeito a decisões baseadas unicamente em processamento automatizado.</p>
+
+        <div class="highlight">
+          <strong>Como Exercer os Seus Direitos?</strong><br>
+          Contacte-nos por email em <a href="mailto:info@fastharmony.pt">info@fastharmony.pt</a> ou telefone <a href="tel:+351963576699">+351 963 576 699</a> com assunto "RGPD — [Seu Direito]" (ex: "RGPD — Direito de Acesso").
+        </div>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section">
+        <h2>4. Cookies e Rastreamento</h2>
+        <p>
+          Este site utiliza <strong>cookies essenciais</strong> apenas para funcionalidade básica (navegação, preferências de sessão). Não utilizamos cookies de rastreamento ou publicidade. Todos os dados processados são para fins legítimos exclusivamente.
+        </p>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section">
+        <h2>5. Contactos de Privacidade</h2>
+        <p>
+          Para questões relacionadas com privacidade e proteção de dados:
+        </p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:info@fastharmony.pt">info@fastharmony.pt</a></li>
+          <li><strong>Telefone:</strong> <a href="tel:+351963576699">+351 963 576 699</a></li>
+          <li><strong>Assunto:</strong> "Privacidade / RGPD"</li>
+        </ul>
+        <p>
+          Responderemos ao seu pedido no prazo máximo de <strong>30 dias</strong>.
+        </p>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section">
+        <h2>6. Denúncia a Autoridade de Supervisão</h2>
+        <p>
+          Se considerar que o tratamento dos seus dados viola os seus direitos ao abrigo do RGPD, tem o direito de apresentar uma reclamação à <strong>Comissão Nacional de Protecção de Dados (CNPD)</strong>:
+        </p>
+        <ul>
+          <li><strong>Website:</strong> <a href="https://www.cnpd.pt" target="_blank" rel="noopener">www.cnpd.pt</a></li>
+          <li><strong>Email:</strong> <a href="mailto:geral@cnpd.pt">geral@cnpd.pt</a></li>
+          <li><strong>Endereço:</strong> Av. D. Carlos I, 134, 1º, 1200-651 Lisboa</li>
+        </ul>
+      </section>
+
+      <!-- ════════════════════════════════════════════ -->
+      <section class="section">
+        <h2>7. Alterações a Esta Política</h2>
+        <p>
+          Podemos actualizar esta Política de Privacidade periodicamente. Qualquer alteração material será comunicada via email aos utilizadores registados. Recomendamos que revise esta política regularmente.
+        </p>
+      </section>
+
+      <hr style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.055); margin: 4rem 0;">
+
+      <p style="text-align: center; color: #4a4640; font-size: 0.85rem; margin-top: 3rem;">
+        FastHarmony LDA<br>
+        Portugal | <a href="mailto:info@fastharmony.pt">info@fastharmony.pt</a>
+      </p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> FastHarmony. Privacidade e Confidencialidade Garantidas.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

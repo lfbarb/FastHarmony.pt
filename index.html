@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FastHarmony — Veículos de Excepção</title>
+  <meta name="description" content="FastHarmony — Especialistas na venda de veículos premium e de excepção. Exclusividade, sofisticação e discrição em cada entrega." />
+  <meta name="theme-color" content="#050504" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Grain texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Reading progress bar (CSS scroll-driven animation) -->
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+  <!-- Custom luxury cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- RGPD Modal -->
+  <div class="rgpd-modal" id="rgpdModal" role="dialog" aria-labelledby="rgpdTitle" aria-hidden="true">
+    <div class="rgpd-modal__overlay" id="rgpdOverlay"></div>
+    <div class="rgpd-modal__content">
+      <button class="rgpd-modal__close" id="rgpdClose" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <h2 id="rgpdTitle" class="rgpd-modal__title">Os Seus Direitos — RGPD</h2>
+      <div class="rgpd-modal__body">
+        <h3>Ao preencher este formulário, tem direito a:</h3>
+        <ul>
+          <li><strong>Acesso:</strong> Ver quais dados temos sobre si</li>
+          <li><strong>Rectificação:</strong> Corrigir dados imprecisos</li>
+          <li><strong>Apagamento:</strong> Solicitar eliminação dos seus dados ("direito ao esquecimento")</li>
+          <li><strong>Portabilidade:</strong> Receber dados num formato portável</li>
+          <li><strong>Oposição:</strong> Recusar comunicações de marketing</li>
+        </ul>
+        <p><strong>Contacte-nos para exercer qualquer direito:</strong></p>
+        <p>
+          📧 <a href="mailto:info@fastharmony.pt">info@fastharmony.pt</a><br>
+          ☎️ <a href="tel:+351963576699">+351 963 576 699</a>
+        </p>
+        <p style="font-size: 0.85rem; margin-top: 1.5rem; color: var(--pearl-dim);">
+          Leia a <a href="privacy.html" target="_blank" rel="noopener">Política de Privacidade completa</a> para mais informações.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       NAVEGAÇÃO
+  ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="FastHarmony — Início">
+        <span class="nav__logo-fast">FAST</span><span class="nav__logo-harmony">HARMONY</span>
+      </a>
+
+      <ul class="nav__links" id="navLinks" role="list">
+        <li><a href="#home" class="nav__link">Início</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#pedido" class="nav__link nav__link--cta">Pedir Informação</a></li>
+      </ul>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Navegação">
+    <div class="mobile-menu__inner">
+      <a href="#home" class="mobile-menu__link">Início</a>
+      <a href="#sobre" class="mobile-menu__link">Sobre</a>
+      <a href="#pedido" class="mobile-menu__link mobile-menu__link--cta">Pedir Informação</a>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+
+    <!-- Background: imagem com Ken Burns + gradiente animado -->
+    <div class="hero__bg" aria-hidden="true">
+      <!--
+        VÍDEO HERO (opcional):
+        Coloca o teu vídeo em assets/video/hero.mp4
+        Recomendado: 1920×1080, H.264, duração 10-30s, sem áudio
+        Formatos suportados: .mp4, .webm
+      -->
+      <!-- Vídeo: Ferrari F430 FPV drone — Wikimedia Commons, CC BY 3.0 -->
+      <video class="hero__video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/video/hero.webm" type="video/webm" />
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+    </div>
+
+    <!-- Vignette overlay -->
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <!-- Decorative vertical line elements -->
+    <div class="hero__decor" aria-hidden="true">
+      <div class="hero__decor-line"></div>
+      <div class="hero__decor-line"></div>
+    </div>
+
+    <!-- Rotated brand watermark -->
+    <span class="hero__watermark" aria-hidden="true">FASTHARMONY · VEÍCULOS DE EXCEPÇÃO</span>
+
+    <div class="hero__content reveal">
+      <h1 class="hero__title">Veículos de Excepção.</h1>
+      <p class="hero__eyebrow"><em>Uma aquisição conduzida</em><br />com rigor absoluto, segurança<br />e total confidencialidade.</p>
+      <p class="hero__subtitle">
+        Serviço personalizado e exclusivo. Atenção absoluta ao detalhe,<br />
+        confiança inabalável em cada passo.
+      </p>
+      <div class="hero__actions">
+        <a href="#pedido" class="btn btn--gold">Pedir Informação</a>
+        <a href="#sobre" class="btn btn--ghost">Como Funciona</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-label="Fazer scroll">
+      <span class="hero__scroll-label">Explorar</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       MARQUEE
+  ═══════════════════════════════════════════ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__word">Exclusividade</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Discrição</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Confiança</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Qualidade</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Exclusividade</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Discrição</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Confiança</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Qualidade</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Exclusividade</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Discrição</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Confiança</span>
+      <span class="marquee__dot">·</span>
+      <span class="marquee__word">Qualidade</span>
+      <span class="marquee__dot">·</span>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════
+       VALORES / PILARES
+  ═══════════════════════════════════════════ -->
+  <section class="values">
+    <div class="container">
+
+      <header class="values__header reveal">
+        <p class="section__eyebrow">Os Nossos Pilares</p>
+        <h2 class="section__title">O que nos<br /><em>define</em></h2>
+      </header>
+
+      <div class="values__grid">
+
+        <article class="values__item reveal" style="--i:0">
+          <div class="values__ordinal" aria-hidden="true">01</div>
+          <div class="values__rule" aria-hidden="true"></div>
+          <div class="values__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 4L30 16H44L33 25L37 38L24 30L11 38L15 25L4 16H18L24 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="values__title">Exclusividade</h3>
+          <p class="values__desc">Modelos criteriosamente selecionados para quem exige o melhor em cada detalhe.</p>
+        </article>
+
+        <article class="values__item reveal" style="--i:1">
+          <div class="values__ordinal" aria-hidden="true">02</div>
+          <div class="values__rule" aria-hidden="true"></div>
+          <div class="values__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 6C24 6 10 12 10 24V36L24 42L38 36V24C38 12 24 6 24 6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M18 24L22 28L30 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="values__title">Discrição</h3>
+          <p class="values__desc">Confidencialidade absoluta em todo o processo, desde o primeiro contacto à entrega.</p>
+        </article>
+
+        <article class="values__item reveal" style="--i:2">
+          <div class="values__ordinal" aria-hidden="true">03</div>
+          <div class="values__rule" aria-hidden="true"></div>
+          <div class="values__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M24 14V24L30 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="values__title">Confiança</h3>
+          <p class="values__desc">Transparência e compromisso garantidos em cada passo da nossa relação consigo.</p>
+        </article>
+
+        <article class="values__item reveal" style="--i:3">
+          <div class="values__ordinal" aria-hidden="true">04</div>
+          <div class="values__rule" aria-hidden="true"></div>
+          <div class="values__icon">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M8 28L16 36L24 28M24 28L32 36L40 28M24 28V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="values__title">Qualidade</h3>
+          <p class="values__desc">Sofisticação em cada veículo, sem compromissos na busca pela excelência.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       SOBRE
+  ═══════════════════════════════════════════ -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__visual reveal">
+          <div class="about__image-wrap">
+            <!-- Imagem de fundo via CSS background-image -->
+          </div>
+          <div class="about__frame" aria-hidden="true"></div>
+          <div class="about__frame-inner" aria-hidden="true"></div>
+        </div>
+
+        <div class="about__content reveal">
+          <p class="section__eyebrow">Sobre a FastHarmony</p>
+          <h2 class="section__title">Uma Referência<br /><em>em Veículos Premium</em></h2>
+
+          <p class="about__text">
+            A FastHarmony nasceu de uma visão simples: proporcionar uma experiência de aquisição de veículos completamente diferente. Num mercado saturado de impessoalidade, nós oferecemos o oposto.
+          </p>
+          <p class="about__text">
+            Trabalhamos com uma selecção rigorosa de modelos, escolhidos não pela quantidade, mas pela qualidade e adequação às expectativas dos nossos clientes. Cada operação é tratada de forma individual, com a atenção ao detalhe que merece.
+          </p>
+          <p class="about__text">
+            A discrição não é apenas uma promessa — é o pilar de tudo o que fazemos. O nosso compromisso é entregar não apenas um veículo, mas uma experiência que supere todas as expectativas.
+          </p>
+
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-num">100%</span>
+              <span class="about__stat-label">Personalizado</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">Premium</span>
+              <span class="about__stat-label">Selecção Rigorosa</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">Total</span>
+              <span class="about__stat-label">Confidencialidade</span>
+            </div>
+          </div>
+
+          <a href="#pedido" class="btn btn--gold">Pedir Informação</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       CONTACTO + FORMULÁRIO
+  ═══════════════════════════════════════════ -->
+  <section class="contact" id="contacto">
+
+    <div class="contact__hero reveal">
+      <div class="contact__hero-overlay" aria-hidden="true"></div>
+      <!--
+        IMAGEM CONTACTO:
+        Coloca a imagem em assets/images/contact-car.jpg
+        Recomendado: 1920×600px, escura/ambiente
+      -->
+      <div class="contact__hero-content">
+        <p class="section__eyebrow">Contacto</p>
+        <h2 class="section__title section__title--light">Fala Connosco</h2>
+        <p class="contact__hero-sub">Estamos disponíveis para esclarecer qualquer questão.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Informações -->
+        <div class="contact__info contact__info--card reveal">
+          <div class="contact__info-inner">
+            <h3 class="contact__info-title">Informações</h3>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M3 5C3 3.9 3.9 3 5 3H8.28C8.68 3 9.04 3.26 9.17 3.64L10.71 8.26C10.86 8.7 10.66 9.18 10.24 9.39L8.44 10.29C9.34 12.32 10.98 13.96 13.01 14.86L13.91 13.06C14.12 12.64 14.6 12.44 15.04 12.59L19.66 14.13C20.04 14.26 20.3 14.62 20.3 15.02V18.3C20.3 19.4 19.4 20.3 18.3 20.3C9.72 20.3 3 13.58 3 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact__info-label">Telefone</span>
+                <a href="tel:+351963576699" class="contact__info-value">+351 963 576 699</a>
+              </div>
+            </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact__info-label">Email</span>
+              <a href="mailto:info@fastharmony.pt" class="contact__info-value">info@fastharmony.pt</a>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 2C8.13 2 5 5.13 5 9C5 13.17 9.42 18.92 11.24 21.11C11.64 21.59 12.37 21.59 12.77 21.11C14.58 18.92 19 13.17 19 9C19 5.13 15.87 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact__info-label">Localização</span>
+              <span class="contact__info-value">Portugal</span>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact__info-label">Disponibilidade</span>
+              <span class="contact__info-value">Segunda a Sexta, 9h–18h</span>
+            </div>
+          </div>
+
+            <div class="contact__divider" aria-hidden="true"></div>
+            <p class="contact__privacy">
+              Toda a informação partilhada é tratada com total confidencialidade, ao abrigo da nossa política de privacidade.
+            </p>
+          </div>
+        </div>
+
+        <!-- Formulário de Pedido -->
+        <div class="contact__form-wrap reveal" id="pedido">
+          <h3 class="contact__form-title">Pedido de Informação</h3>
+          <p class="contact__form-sub">Preenche os detalhes da viatura que procuras. Entraremos em contacto brevemente.</p>
+
+          <form class="form" id="requestForm" action="https://formspree.io/f/xnjlnarv" method="POST" novalidate>
+
+            <!-- Dados Pessoais -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Dados Pessoais</legend>
+
+              <div class="form__row form__row--2">
+                <div class="form__group">
+                  <label class="form__label" for="nome">Nome completo <span class="form__required" aria-label="obrigatório">*</span></label>
+                  <input class="form__input" type="text" id="nome" name="nome" placeholder="João Silva" required autocomplete="name" />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="email">Email <span class="form__required" aria-label="obrigatório">*</span></label>
+                  <input class="form__input" type="email" id="email" name="email" placeholder="joao@exemplo.com" autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form__row form__row--2">
+                <div class="form__group">
+                  <label class="form__label" for="telefone">Telefone <span class="form__required" aria-label="obrigatório">*</span></label>
+                  <input class="form__input" type="tel" id="telefone" name="telefone" placeholder="+351 9XX XXX XXX" autocomplete="tel" />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="contacto-pref">Contacto preferencial</label>
+                  <select class="form__input form__select" id="contacto-pref" name="contacto-pref">
+                    <option value="">Selecionar...</option>
+                    <option value="email">Email</option>
+                    <option value="telefone">Telefone</option>
+                    <option value="whatsapp">WhatsApp</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Detalhes da Viatura -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Detalhes da Viatura</legend>
+
+              <div class="form__row form__row--2">
+                <div class="form__group">
+                  <label class="form__label" for="tipo">Tipo de veículo <span class="form__required" aria-label="obrigatório">*</span></label>
+                  <select class="form__input form__select" id="tipo" name="tipo" required>
+                    <option value="">Selecionar...</option>
+                    <option value="sedan">Sedan / Berlina</option>
+                    <option value="suv">SUV / Crossover</option>
+                    <option value="coupe">Coupé</option>
+                    <option value="cabriolet">Cabriolet / Descapotável</option>
+                    <option value="desportivo">Desportivo / Supercar</option>
+                    <option value="familiar">Familiar / SW</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="marca">Marca(s) de interesse <span class="form__required" aria-label="obrigatório">*</span></label>
+                  <input class="form__input" type="text" id="marca" name="marca" placeholder="ex: Porsche, BMW, Mercedes..." required />
+                </div>
+              </div>
+
+              <div class="form__row form__row--2">
+                <div class="form__group">
+                  <label class="form__label" for="modelo">Modelo pretendido</label>
+                  <input class="form__input" type="text" id="modelo" name="modelo" placeholder="ex: 911 Carrera, X5, E-Class..." />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="combustivel">Combustível</label>
+                  <select class="form__input form__select" id="combustivel" name="combustivel">
+                    <option value="">Indiferente</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="hibrido">Híbrido</option>
+                    <option value="hibrido-plug">Híbrido Plug-in</option>
+                    <option value="eletrico">Elétrico</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__row form__row--3">
+                <div class="form__group">
+                  <label class="form__label" for="ano-min">Ano (mín.)</label>
+                  <select class="form__input form__select" id="ano-min" name="ano-min">
+                    <option value="">Qualquer</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="km-max">Km máximos</label>
+                  <select class="form__input form__select" id="km-max" name="km-max">
+                    <option value="">Indiferente</option>
+                    <option value="10000">Até 10.000 km</option>
+                    <option value="30000">Até 30.000 km</option>
+                    <option value="50000">Até 50.000 km</option>
+                    <option value="80000">Até 80.000 km</option>
+                    <option value="100000">Até 100.000 km</option>
+                    <option value="novo">Novo (0 km)</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="cor">Cor preferida</label>
+                  <input class="form__input" type="text" id="cor" name="cor" placeholder="ex: Preto, Branco..." />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="orcamento">Orçamento estimado</label>
+                <select class="form__input form__select" id="orcamento" name="orcamento">
+                  <option value="">Selecionar faixa de orçamento...</option>
+                  <option value="50-80k">50.000€ – 80.000€</option>
+                  <option value="80-120k">80.000€ – 120.000€</option>
+                  <option value="120-200k">120.000€ – 200.000€</option>
+                  <option value="200-350k">200.000€ – 350.000€</option>
+                  <option value="350k+">Acima de 350.000€</option>
+                  <option value="negociar">A definir / Negociável</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="extras">Equipamentos e extras desejados</label>
+                <textarea class="form__input form__textarea" id="extras" name="extras" placeholder="ex: Tecto de abrir, head-up display, bancos em pele, jantes específicas, pacote desportivo..."></textarea>
+              </div>
+            </fieldset>
+
+            <!-- Informações Adicionais -->
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Informações Adicionais</legend>
+
+              <div class="form__group">
+                <label class="form__label" for="mensagem">Mensagem / Observações</label>
+                <textarea class="form__input form__textarea" id="mensagem" name="mensagem" placeholder="Descreve o que procuras, prazos, condições especiais ou qualquer detalhe relevante..."></textarea>
+              </div>
+
+              <div class="form__row form__row--2">
+                <div class="form__group">
+                  <label class="form__label" for="origem">Como nos conheceste?</label>
+                  <select class="form__input form__select" id="origem" name="origem">
+                    <option value="">Selecionar...</option>
+                    <option value="recomendacao">Recomendação</option>
+                    <option value="pesquisa">Pesquisa online</option>
+                    <option value="redes-sociais">Redes sociais</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__check">
+                <input type="checkbox" id="privacidade" name="privacidade" class="form__checkbox" required />
+                <label for="privacidade" class="form__check-label">
+                  Consinto que os meus dados pessoais sejam processados para responder ao meu pedido, de acordo com a <a href="privacy.html" target="_blank" rel="noopener" class="form__check-link">Política de Privacidade</a>. Tenho direito a aceder, rectificar ou apagar os meus dados. <span class="form__required" aria-label="obrigatório">*</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn--gold btn--full form__submit">
+              <span class="form__submit-text">Enviar Pedido</span>
+              <svg class="form__submit-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <!-- Mensagem de Sucesso -->
+            <div class="form__success" id="formSuccess" aria-live="polite" role="status">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M8 12L11 15L16 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h4>Pedido enviado</h4>
+              <p>Entraremos em contacto o mais breve possível.</p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+       RODAPÉ
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo footer__logo" aria-label="FastHarmony — Topo">
+            <span class="nav__logo-fast">FAST</span><span class="nav__logo-harmony">HARMONY</span>
+          </a>
+          <p class="footer__tagline">Veículos de excepção, experiência incomparável.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Rodapé">
+          <a href="#home" class="footer__link">Início</a>
+          <a href="#sobre" class="footer__link">Sobre</a>
+          <a href="#pedido" class="footer__link">Pedir Informação</a>
+          <a href="privacy.html" target="_blank" rel="noopener" class="footer__link">Política de Privacidade</a>
+        </nav>
+
+        <address class="footer__contact">
+          <a href="tel:+351963576699" class="footer__link">+351 963 576 699</a>
+          <a href="mailto:info@fastharmony.pt" class="footer__link">info@fastharmony.pt</a>
+        </address>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="footerYear"></span> FastHarmony. Todos os direitos reservados.</p>
+        <p class="footer__copy">Privacidade e confidencialidade garantidas. &nbsp;·&nbsp; <a href="https://commons.wikimedia.org/wiki/File:Ferrari_F430_Spider_driving_as_viewed_from_FPV_drone.webm" class="footer__link footer__attr" target="_blank" rel="noopener noreferrer" aria-label="Crédito vídeo hero">Vídeo CC BY 3.0</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
