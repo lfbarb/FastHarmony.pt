@@ -259,15 +259,15 @@ if (form) {
   telefoneInput.addEventListener('blur', updateContactoPreferencial);
 
   form.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Validação customizada
+    // Validação customizada ANTES de submeter
     if (!validateContactFields()) {
+      e.preventDefault();
       form.reportValidity();
       return;
     }
 
     if (!form.checkValidity()) {
+      e.preventDefault();
       form.reportValidity();
       return;
     }
@@ -278,33 +278,8 @@ if (form) {
     submitBtn.disabled = true;
     submitText.textContent = 'A enviar...';
 
-    // Simula envio async — substituir pelo endpoint real
-    setTimeout(() => {
-      form.style.display = 'none';
-      formSuccess.classList.add('show');
-      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 1200);
-
-    /*
-      INTEGRAÇÃO COM BACKEND:
-
-      const data = Object.fromEntries(new FormData(form).entries());
-
-      fetch('/api/pedido', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      })
-      .then(res => { if (!res.ok) throw new Error(); return res.json(); })
-      .then(() => {
-        form.style.display = 'none';
-        formSuccess.classList.add('show');
-      })
-      .catch(() => {
-        submitBtn.disabled = false;
-        submitText.textContent = 'Enviar Pedido';
-      });
-    */
+    // Deixar submeter para Formspree naturalmente (sem preventDefault)
+    // Formspree vai processar e redirecionar
   });
 }
 

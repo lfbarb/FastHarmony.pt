@@ -1,0 +1,109 @@
+- generic [active] [ref=e1]:
+  - heading "Index of /" [level=1] [ref=e2]
+  - table [ref=e3]:
+    - rowgroup [ref=e4]:
+      - row "(drw-rw-rw-) 24-abr.-2026 14:59 .claude/" [ref=e5]:
+        - cell [ref=e6]
+        - cell "(drw-rw-rw-)" [ref=e8]:
+          - code [ref=e9]: (drw-rw-rw-)
+        - cell "24-abr.-2026 14:59" [ref=e10]
+        - cell [ref=e11]:
+          - code
+        - cell ".claude/" [ref=e12]:
+          - link ".claude/" [ref=e13] [cursor=pointer]:
+            - /url: ./.claude/
+      - row "(drw-rw-rw-) 14-abr.-2026 10:33 .git/" [ref=e14]:
+        - cell [ref=e15]
+        - cell "(drw-rw-rw-)" [ref=e17]:
+          - code [ref=e18]: (drw-rw-rw-)
+        - cell "14-abr.-2026 10:33" [ref=e19]
+        - cell [ref=e20]:
+          - code
+        - cell ".git/" [ref=e21]:
+          - link ".git/" [ref=e22] [cursor=pointer]:
+            - /url: ./.git/
+      - row "(drw-rw-rw-) 14-abr.-2026 10:33 .playwright-mcp/" [ref=e23]:
+        - cell [ref=e24]
+        - cell "(drw-rw-rw-)" [ref=e26]:
+          - code [ref=e27]: (drw-rw-rw-)
+        - cell "14-abr.-2026 10:33" [ref=e28]
+        - cell [ref=e29]:
+          - code
+        - cell ".playwright-mcp/" [ref=e30]:
+          - link ".playwright-mcp/" [ref=e31] [cursor=pointer]:
+            - /url: ./.playwright-mcp/
+      - row "(drw-rw-rw-) 14-abr.-2026 10:23 FastHarmony/" [ref=e32]:
+        - cell [ref=e33]
+        - cell "(drw-rw-rw-)" [ref=e35]:
+          - code [ref=e36]: (drw-rw-rw-)
+        - cell "14-abr.-2026 10:23" [ref=e37]
+        - cell [ref=e38]:
+          - code
+        - cell "FastHarmony/" [ref=e39]:
+          - link "FastHarmony/" [ref=e40] [cursor=pointer]:
+            - /url: ./FastHarmony/
+      - row "(drw-rw-rw-) 10-mar.-2026 13:53 js/" [ref=e41]:
+        - cell [ref=e42]
+        - cell "(drw-rw-rw-)" [ref=e44]:
+          - code [ref=e45]: (drw-rw-rw-)
+        - cell "10-mar.-2026 13:53" [ref=e46]
+        - cell [ref=e47]:
+          - code
+        - cell "js/" [ref=e48]:
+          - link "js/" [ref=e49] [cursor=pointer]:
+            - /url: ./js/
+      - row "(-rw-rw-rw-) 14-abr.-2026 09:43 705.9k fastharmony-screenshot.png" [ref=e50]:
+        - cell [ref=e51]
+        - cell "(-rw-rw-rw-)" [ref=e53]:
+          - code [ref=e54]: (-rw-rw-rw-)
+        - cell "14-abr.-2026 09:43" [ref=e55]
+        - cell "705.9k" [ref=e56]:
+          - code [ref=e57]: 705.9k
+        - cell "fastharmony-screenshot.png" [ref=e58]:
+          - link "fastharmony-screenshot.png" [ref=e59] [cursor=pointer]:
+            - /url: ./fastharmony-screenshot.png
+      - row "(-rw-rw-rw-) 14-abr.-2026 10:34 930.9k final-site-check.png" [ref=e60]:
+        - cell [ref=e61]
+        - cell "(-rw-rw-rw-)" [ref=e63]:
+          - code [ref=e64]: (-rw-rw-rw-)
+        - cell "14-abr.-2026 10:34" [ref=e65]
+        - cell "930.9k" [ref=e66]:
+          - code [ref=e67]: 930.9k
+        - cell "final-site-check.png" [ref=e68]:
+          - link "final-site-check.png" [ref=e69] [cursor=pointer]:
+            - /url: ./final-site-check.png
+      - row "(-rw-rw-rw-) 14-abr.-2026 10:24 62.4k form-test-screenshot.png" [ref=e70]:
+        - cell [ref=e71]
+        - cell "(-rw-rw-rw-)" [ref=e73]:
+          - code [ref=e74]: (-rw-rw-rw-)
+        - cell "14-abr.-2026 10:24" [ref=e75]
+        - cell "62.4k" [ref=e76]:
+          - code [ref=e77]: 62.4k
+        - cell "form-test-screenshot.png" [ref=e78]:
+          - link "form-test-screenshot.png" [ref=e79] [cursor=pointer]:
+            - /url: ./form-test-screenshot.png
+      - row "(-rw-rw-rw-) 14-abr.-2026 10:25 16.7k formspree-success.png" [ref=e80]:
+        - cell [ref=e81]
+        - cell "(-rw-rw-rw-)" [ref=e83]:
+          - code [ref=e84]: (-rw-rw-rw-)
+        - cell "14-abr.-2026 10:25" [ref=e85]
+        - cell "16.7k" [ref=e86]:
+          - code [ref=e87]: 16.7k
+        - cell "formspree-success.png" [ref=e88]:
+          - link "formspree-success.png" [ref=e89] [cursor=pointer]:
+            - /url: ./formspree-success.png
+      - row "(-rw-rw-rw-) 14-abr.-2026 10:06 58.7k formulario-screenshot.png" [ref=e90]:
+        - cell [ref=e91]
+        - cell "(-rw-rw-rw-)" [ref=e93]:
+          - code [ref=e94]: (-rw-rw-rw-)
+        - cell "14-abr.-2026 10:06" [ref=e95]
+        - cell "58.7k" [ref=e96]:
+          - code [ref=e97]: 58.7k
+        - cell "formulario-screenshot.png" [ref=e98]:
+          - link "formulario-screenshot.png" [ref=e99] [cursor=pointer]:
+            - /url: ./formulario-screenshot.png
+  - generic [ref=e100]:
+    - text: Node.js v24.14.1/
+    - link "http-server" [ref=e101] [cursor=pointer]:
+      - /url: https://github.com/http-party/http-server
+    - text: server running @ localhost:8000

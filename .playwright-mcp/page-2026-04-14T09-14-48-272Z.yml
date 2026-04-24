@@ -1,0 +1,339 @@
+- generic [active] [ref=e1]:
+  - dialog:
+    - generic:
+      - button:
+        - img
+      - heading [level=2]: Os Seus Direitos — RGPD
+      - generic:
+        - heading [level=3]: "Ao preencher este formulário, tem direito a:"
+        - list:
+          - listitem:
+            - strong: "Acesso:"
+            - text: Ver quais dados temos sobre si
+          - listitem:
+            - strong: "Rectificação:"
+            - text: Corrigir dados imprecisos
+          - listitem:
+            - strong: "Apagamento:"
+            - text: Solicitar eliminação dos seus dados ("direito ao esquecimento")
+          - listitem:
+            - strong: "Portabilidade:"
+            - text: Receber dados num formato portável
+          - listitem:
+            - strong: "Oposição:"
+            - text: Recusar comunicações de marketing
+        - paragraph:
+          - strong: "Contacte-nos para exercer qualquer direito:"
+        - paragraph:
+          - text: 📧
+          - link:
+            - /url: mailto:info@fastharmony.pt
+            - text: info@fastharmony.pt
+          - text: ☎️
+          - link:
+            - /url: tel:+351963576699
+            - text: +351 963 576 699
+        - paragraph:
+          - text: Leia a
+          - link:
+            - /url: privacy.html
+            - text: Política de Privacidade completa
+          - text: para mais informações.
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "FastHarmony — Início" [ref=e4] [cursor=pointer]:
+        - /url: "#home"
+        - text: FASTHARMONY
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "Início" [ref=e7] [cursor=pointer]:
+            - /url: "#home"
+        - listitem [ref=e8]:
+          - link "Sobre" [ref=e9] [cursor=pointer]:
+            - /url: "#sobre"
+        - listitem [ref=e10]:
+          - link "Pedir Informação" [ref=e11] [cursor=pointer]:
+            - /url: "#pedido"
+  - dialog:
+    - generic:
+      - link:
+        - /url: "#home"
+        - text: Início
+      - link:
+        - /url: "#sobre"
+        - text: Sobre
+      - link:
+        - /url: "#pedido"
+        - text: Pedir Informação
+  - generic [ref=e12]:
+    - generic: FASTHARMONY · VEÍCULOS DE EXCEPÇÃO
+    - generic [ref=e16]:
+      - heading "Veículos de Excepção." [level=1] [ref=e17]
+      - paragraph [ref=e18]:
+        - emphasis [ref=e19]: Uma aquisição conduzida
+        - text: com rigor absoluto, segurança
+        - text: e total confidencialidade.
+      - paragraph [ref=e20]:
+        - text: Serviço personalizado e exclusivo. Atenção absoluta ao detalhe,
+        - text: confiança inabalável em cada passo.
+      - generic [ref=e21]:
+        - link "Pedir Informação" [ref=e22]:
+          - /url: "#pedido"
+        - link "Como Funciona" [ref=e23]:
+          - /url: "#sobre"
+    - generic "Fazer scroll" [ref=e24]:
+      - generic [ref=e25]: Explorar
+  - generic [ref=e28]:
+    - generic [ref=e29]: Exclusividade
+    - generic [ref=e30]: ·
+    - generic [ref=e31]: Discrição
+    - generic [ref=e32]: ·
+    - generic [ref=e33]: Confiança
+    - generic [ref=e34]: ·
+    - generic [ref=e35]: Qualidade
+    - generic [ref=e36]: ·
+    - generic [ref=e37]: Exclusividade
+    - generic [ref=e38]: ·
+    - generic [ref=e39]: Discrição
+    - generic [ref=e40]: ·
+    - generic [ref=e41]: Confiança
+    - generic [ref=e42]: ·
+    - generic [ref=e43]: Qualidade
+    - generic [ref=e44]: ·
+    - generic [ref=e45]: Exclusividade
+    - generic [ref=e46]: ·
+    - generic [ref=e47]: Discrição
+    - generic [ref=e48]: ·
+    - generic [ref=e49]: Confiança
+    - generic [ref=e50]: ·
+    - generic [ref=e51]: Qualidade
+    - generic [ref=e52]: ·
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - paragraph [ref=e56]: Os Nossos Pilares
+      - heading "O que nos define" [level=2] [ref=e57]:
+        - text: O que nos
+        - emphasis [ref=e58]: define
+    - generic [ref=e59]:
+      - article [ref=e60]:
+        - generic: "01"
+        - img [ref=e63]
+        - heading "Exclusividade" [level=3] [ref=e65]
+        - paragraph [ref=e66]: Modelos criteriosamente selecionados para quem exige o melhor em cada detalhe.
+      - article [ref=e67]:
+        - generic: "02"
+        - img [ref=e70]
+        - heading "Discrição" [level=3] [ref=e73]
+        - paragraph [ref=e74]: Confidencialidade absoluta em todo o processo, desde o primeiro contacto à entrega.
+      - article [ref=e75]:
+        - generic: "03"
+        - img [ref=e78]
+        - heading "Confiança" [level=3] [ref=e81]
+        - paragraph [ref=e82]: Transparência e compromisso garantidos em cada passo da nossa relação consigo.
+      - article [ref=e83]:
+        - generic: "04"
+        - img [ref=e86]
+        - heading "Qualidade" [level=3] [ref=e89]
+        - paragraph [ref=e90]: Sofisticação em cada veículo, sem compromissos na busca pela excelência.
+  - generic [ref=e98]:
+    - paragraph [ref=e99]: Sobre a FastHarmony
+    - heading "Uma Referência em Veículos Premium" [level=2] [ref=e100]:
+      - text: Uma Referência
+      - emphasis [ref=e101]: em Veículos Premium
+    - paragraph [ref=e102]: "A FastHarmony nasceu de uma visão simples: proporcionar uma experiência de aquisição de veículos completamente diferente. Num mercado saturado de impessoalidade, nós oferecemos o oposto."
+    - paragraph [ref=e103]: Trabalhamos com uma selecção rigorosa de modelos, escolhidos não pela quantidade, mas pela qualidade e adequação às expectativas dos nossos clientes. Cada operação é tratada de forma individual, com a atenção ao detalhe que merece.
+    - paragraph [ref=e104]: A discrição não é apenas uma promessa — é o pilar de tudo o que fazemos. O nosso compromisso é entregar não apenas um veículo, mas uma experiência que supere todas as expectativas.
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: 100%
+        - generic [ref=e108]: Personalizado
+      - generic [ref=e109]:
+        - generic [ref=e110]: Premium
+        - generic [ref=e111]: Selecção Rigorosa
+      - generic [ref=e112]:
+        - generic [ref=e113]: Total
+        - generic [ref=e114]: Confidencialidade
+    - link "Pedir Informação" [ref=e115]:
+      - /url: "#pedido"
+  - generic [ref=e116]:
+    - generic [ref=e119]:
+      - paragraph [ref=e120]: Contacto
+      - heading "Fala Connosco" [level=2] [ref=e121]
+      - paragraph [ref=e122]: Estamos disponíveis para esclarecer qualquer questão.
+    - generic [ref=e124]:
+      - generic [ref=e126]:
+        - heading "Informações" [level=3] [ref=e127]
+        - generic [ref=e128]:
+          - img [ref=e130]
+          - generic [ref=e132]:
+            - generic [ref=e133]: Telefone
+            - link "+351 963 576 699" [ref=e134] [cursor=pointer]:
+              - /url: tel:+351963576699
+        - generic [ref=e135]:
+          - img [ref=e137]
+          - generic [ref=e140]:
+            - generic [ref=e141]: Email
+            - link "info@fastharmony.pt" [ref=e142] [cursor=pointer]:
+              - /url: mailto:info@fastharmony.pt
+        - generic [ref=e143]:
+          - img [ref=e145]
+          - generic [ref=e148]:
+            - generic [ref=e149]: Localização
+            - text: Portugal
+        - generic [ref=e150]:
+          - img [ref=e152]
+          - generic [ref=e155]:
+            - generic [ref=e156]: Disponibilidade
+            - text: Segunda a Sexta, 9h–18h
+        - paragraph [ref=e158]: Toda a informação partilhada é tratada com total confidencialidade, ao abrigo da nossa política de privacidade.
+      - generic [ref=e159]:
+        - heading "Pedido de Informação" [level=3] [ref=e160]
+        - paragraph [ref=e161]: Preenche os detalhes da viatura que procuras. Entraremos em contacto brevemente.
+        - generic [ref=e162]:
+          - group "Dados Pessoais" [ref=e163]:
+            - generic [ref=e164]: Dados Pessoais
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e167]: Nome completo *
+                - textbox "Nome completo obrigatório" [ref=e168]:
+                  - /placeholder: João Silva
+              - generic [ref=e169]:
+                - generic [ref=e170]: Email *
+                - textbox "Email obrigatório" [ref=e171]:
+                  - /placeholder: joao@exemplo.com
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - generic [ref=e174]: Telefone *
+                - textbox "Telefone obrigatório" [ref=e175]:
+                  - /placeholder: +351 9XX XXX XXX
+              - generic [ref=e176]:
+                - generic [ref=e177]: Contacto preferencial
+                - combobox "Contacto preferencial" [ref=e178] [cursor=pointer]:
+                  - option "Selecionar..." [selected]
+                  - option "Email"
+                  - option "Telefone"
+                  - option "WhatsApp"
+          - group "Detalhes da Viatura" [ref=e179]:
+            - generic [ref=e180]: Detalhes da Viatura
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]: Tipo de veículo *
+                - combobox "Tipo de veículo obrigatório" [ref=e184] [cursor=pointer]:
+                  - option "Selecionar..." [selected]
+                  - option "Sedan / Berlina"
+                  - option "SUV / Crossover"
+                  - option "Coupé"
+                  - option "Cabriolet / Descapotável"
+                  - option "Desportivo / Supercar"
+                  - option "Familiar / SW"
+                  - option "Outro"
+              - generic [ref=e185]:
+                - generic [ref=e186]: Marca(s) de interesse *
+                - textbox "Marca(s) de interesse obrigatório" [ref=e187]:
+                  - /placeholder: "ex: Porsche, BMW, Mercedes..."
+            - generic [ref=e188]:
+              - generic [ref=e189]:
+                - generic [ref=e190]: Modelo pretendido
+                - textbox "Modelo pretendido" [ref=e191]:
+                  - /placeholder: "ex: 911 Carrera, X5, E-Class..."
+              - generic [ref=e192]:
+                - generic [ref=e193]: Combustível
+                - combobox "Combustível" [ref=e194] [cursor=pointer]:
+                  - option "Indiferente" [selected]
+                  - option "Gasolina"
+                  - option "Diesel"
+                  - option "Híbrido"
+                  - option "Híbrido Plug-in"
+                  - option "Elétrico"
+            - generic [ref=e195]:
+              - generic [ref=e196]:
+                - generic [ref=e197]: Ano (mín.)
+                - combobox "Ano (mín.)" [ref=e198] [cursor=pointer]:
+                  - option "Qualquer" [selected]
+                  - option "2020"
+                  - option "2021"
+                  - option "2022"
+                  - option "2023"
+                  - option "2024"
+                  - option "2025"
+              - generic [ref=e199]:
+                - generic [ref=e200]: Km máximos
+                - combobox "Km máximos" [ref=e201] [cursor=pointer]:
+                  - option "Indiferente" [selected]
+                  - option "Até 10.000 km"
+                  - option "Até 30.000 km"
+                  - option "Até 50.000 km"
+                  - option "Até 80.000 km"
+                  - option "Até 100.000 km"
+                  - option "Novo (0 km)"
+              - generic [ref=e202]:
+                - generic [ref=e203]: Cor preferida
+                - textbox "Cor preferida" [ref=e204]:
+                  - /placeholder: "ex: Preto, Branco..."
+            - generic [ref=e205]:
+              - generic [ref=e206]: Orçamento estimado
+              - combobox "Orçamento estimado" [ref=e207] [cursor=pointer]:
+                - option "Selecionar faixa de orçamento..." [selected]
+                - option "50.000€ – 80.000€"
+                - option "80.000€ – 120.000€"
+                - option "120.000€ – 200.000€"
+                - option "200.000€ – 350.000€"
+                - option "Acima de 350.000€"
+                - option "A definir / Negociável"
+            - generic [ref=e208]:
+              - generic [ref=e209]: Equipamentos e extras desejados
+              - textbox "Equipamentos e extras desejados" [ref=e210]:
+                - /placeholder: "ex: Tecto de abrir, head-up display, bancos em pele, jantes específicas, pacote desportivo..."
+          - group "Informações Adicionais" [ref=e211]:
+            - generic [ref=e212]: Informações Adicionais
+            - generic [ref=e213]:
+              - generic [ref=e214]: Mensagem / Observações
+              - textbox "Mensagem / Observações" [ref=e215]:
+                - /placeholder: Descreve o que procuras, prazos, condições especiais ou qualquer detalhe relevante...
+            - generic [ref=e217]:
+              - generic [ref=e218]: Como nos conheceste?
+              - combobox "Como nos conheceste?" [ref=e219] [cursor=pointer]:
+                - option "Selecionar..." [selected]
+                - option "Recomendação"
+                - option "Pesquisa online"
+                - option "Redes sociais"
+                - option "Outro"
+            - generic [ref=e220]:
+              - checkbox "Consinto que os meus dados pessoais sejam processados para responder ao meu pedido, de acordo com a Política de Privacidade. Tenho direito a aceder, rectificar ou apagar os meus dados. obrigatório" [ref=e221] [cursor=pointer]
+              - generic [ref=e222] [cursor=pointer]:
+                - text: Consinto que os meus dados pessoais sejam processados para responder ao meu pedido, de acordo com a
+                - link "Política de Privacidade" [ref=e223]:
+                  - /url: privacy.html
+                - text: . Tenho direito a aceder, rectificar ou apagar os meus dados. *
+          - button "Enviar Pedido" [ref=e224]:
+            - generic [ref=e225]: Enviar Pedido
+            - img [ref=e226]
+  - contentinfo [ref=e228]:
+    - generic [ref=e229]:
+      - generic [ref=e230]:
+        - generic [ref=e231]:
+          - link "FastHarmony — Topo" [ref=e232] [cursor=pointer]:
+            - /url: "#home"
+            - text: FASTHARMONY
+          - paragraph [ref=e233]: Veículos de excepção, experiência incomparável.
+        - navigation "Rodapé" [ref=e234]:
+          - link "Início" [ref=e235] [cursor=pointer]:
+            - /url: "#home"
+          - link "Sobre" [ref=e236] [cursor=pointer]:
+            - /url: "#sobre"
+          - link "Pedir Informação" [ref=e237] [cursor=pointer]:
+            - /url: "#pedido"
+          - link "Política de Privacidade" [ref=e238] [cursor=pointer]:
+            - /url: privacy.html
+        - generic [ref=e239]:
+          - link "+351 963 576 699" [ref=e240] [cursor=pointer]:
+            - /url: tel:+351963576699
+          - link "info@fastharmony.pt" [ref=e241] [cursor=pointer]:
+            - /url: mailto:info@fastharmony.pt
+      - generic [ref=e242]:
+        - paragraph [ref=e243]: © 2026 FastHarmony. Todos os direitos reservados.
+        - paragraph [ref=e244]:
+          - text: Privacidade e confidencialidade garantidas. ·
+          - link "Crédito vídeo hero" [ref=e245] [cursor=pointer]:
+            - /url: https://commons.wikimedia.org/wiki/File:Ferrari_F430_Spider_driving_as_viewed_from_FPV_drone.webm
+            - text: Vídeo CC BY 3.0
